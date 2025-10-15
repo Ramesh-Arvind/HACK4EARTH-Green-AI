@@ -1,0 +1,45 @@
+{
+  "simulation_params": {
+    "season": "winter",
+    "start_date": "2020-01-15",
+    "duration_days": 7,
+    "timestep_minutes": 5,
+    "greenhouse_area_m2": 62.5
+  },
+  "resource_consumption": {
+    "heating_MJ_m2": 14.079061231467321,
+    "heating_MJ_m2_day": 2.011294461638189,
+    "electricity_kWh_m2": 3.4846874999999997,
+    "electricity_kWh_m2_day": 0.49781249999999994,
+    "co2_kg_m2": 1.0587499999999999,
+    "co2_kg_m2_day": 0.15124999999999997
+  },
+  "economics": {
+    "total_cost_eur_m2": 0.4646037082211788,
+    "cost_heating_eur_m2": 0.11685620822117876,
+    "cost_electricity_eur_m2": 0.2630475,
+    "cost_co2_eur_m2": 0.08470000000000003,
+    "daily_cost_eur_m2": 0.06637195831731126
+  },
+  "carbon_footprint": {
+    "total_kgCO2e_m2": 3.3107461789621704,
+    "heating_kgCO2e_m2": 0.78842742896217,
+    "electricity_kgCO2e_m2": 1.4635687499999999,
+    "co2_injection_kgCO2e_m2": 1.0587499999999999,
+    "daily_kgCO2e_m2": 0.4729637398517386
+  },
+  "climate_performance": {
+    "temperature_mean_C": 20.44809217838953,
+    "temperature_std_C": 1.2863912532254165,
+    "temperature_range": [
+      10.667871641467578,
+      22.48891541861454
+    ],
+    "humidity_mean_pct": 74.29754593348548,
+    "humidity_std_pct": 0.21841341693273458,
+    "co2_mean_ppm": 385.35827712165707,
+    "co2_std_ppm": 9.515742872770687,
+    "par_mean_umol": 161.27132981911538,
+    "par_std_umol": 162.23092117045115
+  }
+}

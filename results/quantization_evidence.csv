@@ -1,0 +1,7 @@
+run_id,model_variant,timestamp,num_parameters,model_size_mb,num_inferences,total_energy_kwh,energy_per_inference_wh,carbon_total_kg,carbon_per_inference_g,inference_time_ms,inferences_per_second,energy_reduction_pct,carbon_reduction_pct,speedup,device
+compression_benchmark_1,FP32_Baseline,2025-10-15T12:07:46.932019,108100,0.41,100,1e-06,0.0063,0.0,0.0,0.87,1146.6,0.0,0.0,1.0,cpu
+compression_benchmark_2,INT8_Dynamic,2025-10-15T12:07:46.932202,1408,0.01,100,1e-06,0.013,1e-06,0.0,1.81,553.9,-107.02,-107.02,0.48,cpu
+compression_benchmark_3,Pruned_30pct,2025-10-15T12:07:46.932358,108100,0.41,100,1e-06,0.0068,0.0,0.0,0.94,1060.4,-8.13,-8.13,0.92,cpu
+compression_benchmark_4,Pruned_50pct,2025-10-15T12:07:46.932509,108100,0.41,100,1e-06,0.0067,0.0,0.0,0.93,1071.9,-6.97,-6.97,0.93,cpu
+compression_benchmark_5,Student_64dim,2025-10-15T12:07:46.932656,5508,0.02,100,0.0,0.0015,0.0,0.0,0.21,4873.5,76.47,76.47,4.25,cpu
+compression_benchmark_6,Pruned30_INT8,2025-10-15T12:07:46.932803,1408,0.01,100,1e-06,0.0111,0.0,0.0,1.54,650.8,-76.17,-76.17,0.57,cpu

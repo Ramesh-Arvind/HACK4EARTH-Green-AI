@@ -98,8 +98,9 @@ EcoGrow addresses these challenges through an integrated system combining:
 
 ## Tags & Keywords
 `green-ai` `sustainable-agriculture` `physics-informed-ml` `carbon-aware-computing` 
-`model-quantization` `greenhouse-control` `climate-tech` `edge-ai` 
-`multi-objective-optimization` `energy-efficiency` `carbon-reduction`
+`model-quantization` `knowledge-distillation` `pruning` `greenhouse-control` 
+`climate-tech` `edge-ai` `multi-objective-optimization` `nsga-ii` 
+`energy-efficiency` `carbon-reduction` `physics-informed-neural-networks`
 
 ## Links & Resources
 - **GitHub Repository:** https://github.com/Ramesh-Arvind/HACK4EARTH-Green-AI
