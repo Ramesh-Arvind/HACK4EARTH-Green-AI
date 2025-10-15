@@ -1,0 +1,127 @@
+{
+  "dataset_name": "Autonomous Greenhouse Challenge - 2nd Edition (2019)",
+  "doi": "10.18174/544434",
+  "citation": "Hemming, S., de Zwart, F., Elings, A., Righini, I., Petropoulou, A. (2019)",
+  "location": "Wageningen University & Research, Netherlands (52\u00b0N)",
+  "period": "January 1 - June 17, 2020 (168 days)",
+  "greenhouse": {
+    "type": "Research compartment",
+    "total_area_m2": 96,
+    "growing_area_m2": 62.5,
+    "cover_transmissivity": 0.5,
+    "energy_screen_transmissivity": 0.75,
+    "blackout_screen_transmissivity": 0.02
+  },
+  "crop": {
+    "species": "Solanum lycopersicum (Tomato)",
+    "cultivar": "Axiany",
+    "type": "Truss tomato",
+    "planting_density": "2-stem plants",
+    "density_range": "2.5-3.5 stems/m\u00b2"
+  },
+  "sensors": {
+    "climate": {
+      "temperature": {
+        "accuracy": "\u00b10.2\u00b0C",
+        "location": "Indoor (Tair) & Outdoor (Tout)"
+      },
+      "humidity": {
+        "accuracy": "\u00b12% RH",
+        "variables": [
+          "Rhair",
+          "Rhout",
+          "HumDef"
+        ]
+      },
+      "co2": {
+        "accuracy": "\u00b150 ppm",
+        "calibration": "Monthly handheld meter"
+      },
+      "light": {
+        "sensors": [
+          "Pyranometer (Iglob)",
+          "PAR sensor (PARout, Tot_PAR)"
+        ]
+      },
+      "wind": {
+        "sensors": [
+          "Anemometer (Windsp)",
+          "Compass (Winddir)"
+        ]
+      }
+    },
+    "actuators": {
+      "ventilation": {
+        "variables": [
+          "VentLee",
+          "Ventwind"
+        ],
+        "range": "0-100% opening"
+      },
+      "lighting": {
+        "HPS": "81 W/m\u00b2",
+        "LED": "Spectrum-specific (7-25 W/m\u00b2)"
+      },
+      "screens": {
+        "energy": "EnScr (0-100%)",
+        "blackout": "BlackScr (0-100%)"
+      },
+      "heating": {
+        "rail_pipe": "PipeLow (\u00b0C)",
+        "crop_pipe": "PipeGrow (\u00b0C)"
+      },
+      "co2_dosing": {
+        "variable": "co2_dos",
+        "unit": "kg/ha/hour"
+      }
+    },
+    "root_zone": {
+      "sensor_type": "Grodan Grosens",
+      "variables": [
+        "EC_slab1/2 (dS/m)",
+        "WC_slab1/2 (%)",
+        "t_slab1/2 (\u00b0C)"
+      ],
+      "resolution": "5 minutes (upsampled from 3 min)",
+      "coverage": "Until May 26, 2020"
+    }
+  },
+  "sampling_intervals": {
+    "Weather": "5 minutes",
+    "GreenhouseClimate": "5 minutes",
+    "Resources": "Daily aggregate",
+    "Production": "Per harvest (3\u00d7 per 2 weeks)",
+    "CropParameters": "Weekly",
+    "TomQuality": "Bi-weekly",
+    "LabAnalysis": "Bi-weekly",
+    "GrodanSens": "5 minutes"
+  },
+  "economic_model": {
+    "net_profit_formula": "Income - Fixed Costs - Variable Costs",
+    "costs": {
+      "electricity_peak": "\u20ac0.08/kWh (07:00-23:00)",
+      "electricity_offpeak": "\u20ac0.04/kWh (23:00-07:00)",
+      "heating": "\u20ac0.0083/MJ",
+      "co2": "\u20ac0.08/kg (first 12 kg/m\u00b2), \u20ac0.20/kg (additional)",
+      "labor": "\u20ac0.0085 per stem/m\u00b2/day"
+    },
+    "income": {
+      "tomato_price_range": "\u20ac1.10-5.20/kg",
+      "price_factors": [
+        "Brix level (6-10)",
+        "Market date",
+        "Class (A=full, B=half)"
+      ]
+    }
+  },
+  "reference_group_performance": {
+    "yield_kg_m2": 48,
+    "quality_brix": 7.8,
+    "quality_flavor": 68,
+    "heating_MJ_m2": 180,
+    "electricity_kWh_m2": 370,
+    "co2_kg_m2": 22,
+    "water_L_m2": 300,
+    "net_profit_eur_m2": 173.82
+  }
+}

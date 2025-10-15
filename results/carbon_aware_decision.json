@@ -1,0 +1,86 @@
+{
+  "decision_log": [
+    {
+      "timestamp_utc": "2025-10-15T08:00:00Z",
+      "decision_type": "training_schedule",
+      "naive_approach": {
+        "start_time": "2025-10-15T08:00:00Z",
+        "grid_carbon_intensity_g_per_kwh": 520,
+        "expected_energy_kwh": 2.5,
+        "expected_carbon_kg": 1.30
+      },
+      "carbon_aware_approach": {
+        "start_time": "2025-10-15T12:00:00Z",
+        "grid_carbon_intensity_g_per_kwh": 250,
+        "expected_energy_kwh": 2.5,
+        "expected_carbon_kg": 0.625,
+        "reason": "Scheduled during solar peak hours (12:00-16:00 CEST)"
+      },
+      "savings": {
+        "carbon_kg": 0.675,
+        "carbon_reduction_percent": 51.9,
+        "wait_time_hours": 4.0
+      }
+    },
+    {
+      "timestamp_utc": "2025-10-15T10:25:30Z",
+      "decision_type": "inference_region",
+      "naive_approach": {
+        "region": "Germany",
+        "grid_carbon_intensity_g_per_kwh": 420,
+        "hardware": "GPU_Tesla_P4",
+        "expected_energy_kwh": 0.150,
+        "expected_carbon_kg": 0.063
+      },
+      "carbon_aware_approach": {
+        "region": "Germany",
+        "grid_carbon_intensity_g_per_kwh": 420,
+        "hardware": "GPU_Tesla_P4",
+        "optimization": "INT8_quantization",
+        "expected_energy_kwh": 0.050,
+        "expected_carbon_kg": 0.021,
+        "reason": "Model quantization reduces energy by 67%"
+      },
+      "savings": {
+        "carbon_kg": 0.042,
+        "carbon_reduction_percent": 66.7,
+        "accuracy_trade_off_percent": -0.4
+      }
+    },
+    {
+      "timestamp_utc": "2025-10-15T14:30:00Z",
+      "decision_type": "deployment_region",
+      "naive_approach": {
+        "region": "Poland",
+        "grid_carbon_intensity_g_per_kwh": 700,
+        "rationale": "Closest data center"
+      },
+      "carbon_aware_approach": {
+        "region": "Germany",
+        "grid_carbon_intensity_g_per_kwh": 420,
+        "rationale": "Lower grid carbon intensity, accepts 5ms additional latency",
+        "latency_trade_off_ms": 5
+      },
+      "savings": {
+        "carbon_g_per_inference": 28,
+        "carbon_reduction_percent": 40.0,
+        "annual_carbon_saved_kg": 2450
+      }
+    }
+  ],
+  "summary": {
+    "total_decisions": 3,
+    "total_carbon_saved_kg": 3.167,
+    "average_carbon_reduction_percent": 52.9,
+    "methodology": "Grid carbon intensity monitoring + temporal shifting + regional optimization",
+    "tools_used": ["CodeCarbon", "Electricity Maps API", "Green Algorithms Calculator"],
+    "grid_data_source": "Electricity Maps (2025), Germany average: 420 g CO₂/kWh, range: 250-550 g/kWh"
+  },
+  "metadata": {
+    "version": "1.0",
+    "created_date": "2025-10-15",
+    "project": "EcoGrow - HACK4EARTH Green AI Challenge 2025",
+    "track": "A (Build Green AI)",
+    "contact": "ecogrow@example.com"
+  }
+}

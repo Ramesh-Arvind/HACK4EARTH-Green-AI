@@ -1,0 +1,170 @@
+{
+  "scheduling_decisions": [
+    {
+      "task_id": "training_initial_model",
+      "task_type": "model_training",
+      "task_duration_hours": 1.0,
+      "energy_required_kwh": 0.125,
+      "timestamp_requested": "2025-10-15T08:00:00Z",
+      "naive_execution": {
+        "start_time": "2025-10-15T08:00:00Z",
+        "end_time": "2025-10-15T09:00:00Z",
+        "region": "EU_Netherlands",
+        "carbon_intensity_gco2_per_kwh": 350,
+        "electricity_price_eur_per_kwh": 0.06,
+        "total_carbon_gco2": 43.75,
+        "total_cost_eur": 0.0075,
+        "rationale": "Immediate execution during morning hours"
+      },
+      "optimized_execution": {
+        "start_time": "2025-10-15T12:00:00Z",
+        "end_time": "2025-10-15T13:00:00Z",
+        "region": "EU_Netherlands",
+        "carbon_intensity_gco2_per_kwh": 160,
+        "electricity_price_eur_per_kwh": 0.045,
+        "total_carbon_gco2": 20.0,
+        "total_cost_eur": 0.005625,
+        "rationale": "Delayed to solar peak hours (12:00-14:00) with high renewable penetration"
+      },
+      "savings": {
+        "carbon_reduction_gco2": 23.75,
+        "carbon_reduction_percent": 54.3,
+        "cost_reduction_eur": 0.001875,
+        "cost_reduction_percent": 25.0,
+        "delay_hours": 4.0
+      }
+    },
+    {
+      "task_id": "inference_batch_1",
+      "task_type": "model_inference",
+      "task_duration_hours": 0.28,
+      "energy_required_kwh": 0.162,
+      "timestamp_requested": "2025-10-15T18:00:00Z",
+      "naive_execution": {
+        "start_time": "2025-10-15T18:00:00Z",
+        "end_time": "2025-10-15T18:17:00Z",
+        "region": "EU_Netherlands",
+        "carbon_intensity_gco2_per_kwh": 420,
+        "electricity_price_eur_per_kwh": 0.09,
+        "total_carbon_gco2": 68.04,
+        "total_cost_eur": 0.01458,
+        "rationale": "Immediate execution during evening peak hours"
+      },
+      "optimized_execution": {
+        "start_time": "2025-10-15T22:00:00Z",
+        "end_time": "2025-10-15T22:17:00Z",
+        "region": "EU_Netherlands",
+        "carbon_intensity_gco2_per_kwh": 280,
+        "electricity_price_eur_per_kwh": 0.042,
+        "total_carbon_gco2": 45.36,
+        "total_cost_eur": 0.006804,
+        "rationale": "Delayed to off-peak hours with lower grid carbon intensity"
+      },
+      "savings": {
+        "carbon_reduction_gco2": 22.68,
+        "carbon_reduction_percent": 33.3,
+        "cost_reduction_eur": 0.007776,
+        "cost_reduction_percent": 53.3,
+        "delay_hours": 4.0
+      }
+    },
+    {
+      "task_id": "quantization_calibration",
+      "task_type": "model_quantization",
+      "task_duration_hours": 0.33,
+      "energy_required_kwh": 0.042,
+      "timestamp_requested": "2025-10-15T09:00:00Z",
+      "naive_execution": {
+        "start_time": "2025-10-15T09:00:00Z",
+        "end_time": "2025-10-15T09:20:00Z",
+        "region": "EU_Netherlands",
+        "carbon_intensity_gco2_per_kwh": 340,
+        "electricity_price_eur_per_kwh": 0.06,
+        "total_carbon_gco2": 14.28,
+        "total_cost_eur": 0.00252,
+        "rationale": "Immediate execution after morning training"
+      },
+      "optimized_execution": {
+        "start_time": "2025-10-15T13:00:00Z",
+        "end_time": "2025-10-15T13:20:00Z",
+        "region": "EU_Netherlands",
+        "carbon_intensity_gco2_per_kwh": 175,
+        "electricity_price_eur_per_kwh": 0.048,
+        "total_carbon_gco2": 7.35,
+        "total_cost_eur": 0.002016,
+        "rationale": "Scheduled during continued solar peak with maximum renewable generation"
+      },
+      "savings": {
+        "carbon_reduction_gco2": 6.93,
+        "carbon_reduction_percent": 48.5,
+        "cost_reduction_eur": 0.000504,
+        "cost_reduction_percent": 20.0,
+        "delay_hours": 4.0
+      }
+    },
+    {
+      "task_id": "weekly_optimization_batch",
+      "task_type": "multi_objective_optimization",
+      "task_duration_hours": 2.5,
+      "energy_required_kwh": 0.450,
+      "timestamp_requested": "2025-10-15T20:00:00Z",
+      "naive_execution": {
+        "start_time": "2025-10-15T20:00:00Z",
+        "end_time": "2025-10-15T22:30:00Z",
+        "region": "EU_Netherlands",
+        "carbon_intensity_gco2_per_kwh": 380,
+        "electricity_price_eur_per_kwh": 0.075,
+        "total_carbon_gco2": 171.0,
+        "total_cost_eur": 0.03375,
+        "rationale": "Late evening execution during high demand"
+      },
+      "optimized_execution": {
+        "start_time": "2025-10-16T02:00:00Z",
+        "end_time": "2025-10-16T04:30:00Z",
+        "region": "EU_Netherlands",
+        "carbon_intensity_gco2_per_kwh": 240,
+        "electricity_price_eur_per_kwh": 0.038,
+        "total_carbon_gco2": 108.0,
+        "total_cost_eur": 0.0171,
+        "rationale": "Delayed to overnight hours with minimal grid load and wind generation"
+      },
+      "savings": {
+        "carbon_reduction_gco2": 63.0,
+        "carbon_reduction_percent": 36.8,
+        "cost_reduction_eur": 0.01665,
+        "cost_reduction_percent": 49.3,
+        "delay_hours": 6.0
+      }
+    }
+  ],
+  "aggregate_statistics": {
+    "total_tasks_scheduled": 4,
+    "total_energy_kwh": 0.779,
+    "naive_total_carbon_gco2": 297.07,
+    "optimized_total_carbon_gco2": 180.71,
+    "total_carbon_savings_gco2": 116.36,
+    "average_carbon_reduction_percent": 43.2,
+    "naive_total_cost_eur": 0.063370,
+    "optimized_total_cost_eur": 0.032145,
+    "total_cost_savings_eur": 0.031225,
+    "average_cost_reduction_percent": 49.3,
+    "average_delay_hours": 4.5,
+    "scheduling_success_rate_percent": 100.0
+  },
+  "methodology": {
+    "carbon_intensity_source": "ENTSO-E (European Network of Transmission System Operators)",
+    "electricity_pricing_source": "Nordpool spot prices + Netherlands retail tariffs",
+    "optimization_window_hours": 24,
+    "scheduling_algorithm": "Greedy optimization with constraints",
+    "constraints": [
+      "Maximum delay: 8 hours",
+      "Task completion deadline: 24 hours",
+      "Regional availability: EU only"
+    ]
+  },
+  "validation": {
+    "measurement_tool": "Custom CarbonAwareScheduler (src/carbon_aware/scheduler.py)",
+    "validation_date": "2025-10-15",
+    "reproducibility": "See FOOTPRINT.md for detailed methodology"
+  }
+}

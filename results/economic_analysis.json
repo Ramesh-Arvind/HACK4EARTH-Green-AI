@@ -1,0 +1,14 @@
+{
+  "total_cost_eur_m2": 21.472660728879998,
+  "total_carbon_kg_co2e_m2": 147.265269111,
+  "breakdown_cost": {
+    "heating": 3.913948,
+    "electricity": 16.868,
+    "co2": 0.69071272888
+  },
+  "breakdown_carbon": {
+    "heating": 26.40736,
+    "electricity": 112.22400000000002,
+    "co2_injection": 8.633909111000001
+  }
+}

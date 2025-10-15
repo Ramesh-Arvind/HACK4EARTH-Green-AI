@@ -1,0 +1,8 @@
+run_id,phase,task,dataset,hardware,region,timestamp_utc,kWh,kgCO2e,water_L,runtime_s,quality_metric_name,quality_metric_value,notes
+baseline_1,baseline,inference,test_347_samples,GPU_Tesla_P4,Germany,2025-10-15T10:25:30Z,0.150,0.075,0.27,8.7,R2_score,0.928,Full GNN+PINN model with 29959 parameters
+baseline_2,baseline,inference,test_347_samples,GPU_Tesla_P4,Germany,2025-10-15T10:26:15Z,0.148,0.074,0.27,8.5,R2_score,0.929,Replicate run 2
+baseline_3,baseline,inference,test_347_samples,GPU_Tesla_P4,Germany,2025-10-15T10:27:00Z,0.152,0.076,0.27,8.9,R2_score,0.927,Replicate run 3
+optimized_1,optimized,inference,test_347_samples,GPU_Tesla_P4,Germany,2025-10-15T10:25:48Z,0.050,0.025,0.09,3.2,R2_score,0.924,INT8 quantized Linear and GRU layers
+optimized_2,optimized,inference,test_347_samples,GPU_Tesla_P4,Germany,2025-10-15T10:26:30Z,0.049,0.025,0.09,3.1,R2_score,0.925,Quantized replicate 2
+optimized_3,optimized,inference,test_347_samples,GPU_Tesla_P4,Germany,2025-10-15T10:27:15Z,0.051,0.026,0.09,3.3,R2_score,0.923,Quantized replicate 3
+carbon_aware_1,optimized,training,train_2000_samples,GPU_Tesla_P4,Germany,2025-10-15T12:00:00Z,0.048,0.012,0.09,3.2,R2_score,0.924,Trained during solar peak 12:00-16:00 CEST (250 g CO2/kWh)

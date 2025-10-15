@@ -1,0 +1,45 @@
+{
+  "completion_date": "2025-10-15T11:22:10.408332",
+  "statistical_profile": {
+    "climate_variables": 10,
+    "resource_variables": 6,
+    "weather_variables": 5
+  },
+  "economic_analysis": {
+    "total_cost_eur_m2": 21.472660728879998,
+    "total_carbon_kg_co2e_m2": 147.265269111,
+    "breakdown_cost": {
+      "heating": 3.913948,
+      "electricity": 16.868,
+      "co2": 0.69071272888
+    },
+    "breakdown_carbon": {
+      "heating": 26.40736,
+      "electricity": 112.22400000000002,
+      "co2_injection": 8.633909111000001
+    }
+  },
+  "yield_analysis": {
+    "total_yield_kg_m2": 14.303,
+    "class_a_kg_m2": 14.3,
+    "class_b_kg_m2": 0.003,
+    "energy_per_kg_MJ": 1.6035572956722366,
+    "cost_per_kg_eur": 1.5012697146668528,
+    "net_profit_eur_m2": 28.582589271120003
+  },
+  "key_correlations": {
+    "heating_vs_temp": 0.06857126404441276,
+    "elec_vs_PAR": -0.5932932300867129,
+    "vent_vs_temp": 0.25960682599286855
+  },
+  "figures_created": [
+    "fig1_daily_energy_patterns.png",
+    "fig2_climate_timeseries.png",
+    "fig3_seasonal_trends.png",
+    "fig4_diurnal_patterns.png",
+    "fig5_correlation_heatmap.png",
+    "fig6_scatter_relationships.png",
+    "fig7_economic_carbon_analysis.png",
+    "fig8_yield_quality.png"
+  ]
+}

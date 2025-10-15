@@ -1,0 +1,136 @@
+================================================================================
+PHASE 2: EXPLORATORY DATA ANALYSIS (EDA)
+Wageningen Autonomous Greenhouse Challenge - 2nd Edition (2019)
+================================================================================
+
+📊 Loading datasets...
+✅ Climate data: 47,809 records
+✅ Resource data: 166 records
+✅ Weather data: 47,809 records
+✅ Production data: 24 records
+✅ Quality data: 8 records
+
+================================================================================
+1. STATISTICAL PROFILING
+================================================================================
+
+📊 Climate Variables Statistics:
+                  mean         std    min     max  missing_pct  outliers
+Tair         22.713505    3.920410   -1.0    34.3     0.148508         9
+Rhair        81.756069   11.619726  -22.2    99.2     0.148508      4306
+CO2air      649.282333  126.785312 -499.0  1224.0     0.148508      3005
+HumDef        3.905111    3.065672    0.2    32.1     0.148508      3759
+VentLee      11.186309   21.313545    0.0   100.0     0.148508      5933
+Ventwind      2.724643    8.575369    0.0   100.0     0.148508      6714
+AssimLight   52.536763   49.936130    0.0   100.0     0.148508         0
+PipeLow      31.250323   20.933679    0.0    73.6     0.148508         0
+PipeGrow     10.446441   17.934326    0.0    61.3     0.148508         0
+Tot_PAR     221.285161  211.394490    0.0  1005.0     0.148508      1985
+
+📊 Resource Consumption Statistics:
+               mean       std       min       max  missing_pct
+Heat_cons  2.840723  1.235581  0.130000  5.960000          0.0
+ElecHigh   0.930723  0.633381  0.000000  1.500000          0.0
+ElecLow    0.678916  0.381355  0.000000  1.000000          0.0
+CO2_cons   0.052012  0.023226  0.009824  0.138482          0.0
+Irr        4.750602  2.193233  0.000000  8.300000          0.0
+Drain      2.110241  1.441701  0.000000  5.200000          0.0
+
+📊 Weather Variables Statistics:
+              mean         std        min     max
+Tout      9.025341    4.229593  -0.200000    27.3
+Rhout    74.847942   19.873991  10.100003    99.7
+Iglob   125.296703  222.006296   0.000000  1505.0
+Windsp    4.982486    3.849020   0.000000    21.9
+PARout  250.270026  443.856662   0.000000  2010.0
+
+================================================================================
+2. TIME-SERIES VISUALIZATION
+================================================================================
+
+📈 Creating Figure 1: Daily Energy Patterns...
+   ✅ Saved: fig1_daily_energy_patterns.png
+
+📈 Creating Figure 2: Climate Variables...
+   ✅ Saved: fig2_climate_timeseries.png
+
+📈 Creating Figure 3: Seasonal Trends...
+   ✅ Saved: fig3_seasonal_trends.png
+
+📈 Creating Figure 4: Diurnal Patterns...
+   ✅ Saved: fig4_diurnal_patterns.png
+
+================================================================================
+3. CORRELATION & CAUSALITY ANALYSIS
+================================================================================
+
+📈 Creating Figure 5: Correlation Heatmap...
+   ✅ Saved: fig5_correlation_heatmap.png
+
+🔍 Key Correlations:
+   Heat_cons vs Tair: 0.069
+   ElecHigh vs Tot_PAR: -0.593
+   VentLee vs Tair: 0.260
+
+📈 Creating Figure 6: Key Relationships...
+   ✅ Saved: fig6_scatter_relationships.png
+
+================================================================================
+4. ECONOMIC CONTEXT ANALYSIS
+================================================================================
+
+💰 Economic Analysis:
+   Total heating cost: €3.91
+   Total electricity cost: €16.87
+   Total CO₂ cost: €0.69
+   TOTAL COST: €21.47
+
+🌱 Carbon Footprint:
+   Heating emissions: 26.41 kg CO₂e
+   Electricity emissions: 112.22 kg CO₂e
+   CO₂ injection: 8.63 kg CO₂
+   TOTAL EMISSIONS: 147.27 kg CO₂e
+
+📈 Creating Figure 7: Cost & Carbon Analysis...
+   ✅ Saved: fig7_economic_carbon_analysis.png
+
+================================================================================
+5. CROP YIELD RELATIONSHIPS
+================================================================================
+
+📊 Production Data:
+   Total harvests: 24
+   Total yield (Class A): 14.30 kg/m²
+   Total yield (Class B): 0.00 kg/m²
+   Total yield: 14.30 kg/m²
+
+⚡ Energy Efficiency:
+   Total energy: 1433.48 MJ
+   Total yield: 893.94 kg
+   Energy per kg tomato: 1.60 MJ/kg
+
+💰 Economic Efficiency:
+   Resource cost per kg tomato: €1.50/kg
+   Estimated income: €50.06/m²
+   Net profit: €28.58/m²
+   Profit margin: 57.1%
+
+📈 Creating Figure 8: Yield & Quality...
+   ✅ Saved: fig8_yield_quality.png
+
+================================================================================
+PHASE 2 COMPLETE - SUMMARY
+================================================================================
+
+✅ Figures created: 8
+✅ Economic analysis: €21.47/m² total cost
+✅ Carbon footprint: 147.27 kg CO₂e/m²
+✅ Yield: 14.30 kg/m²
+✅ Net profit: €28.58/m²
+
+📁 All results saved to: /home/rnaa/paper_5_pica_whatif/ecogrow/results
+📁 All figures saved to: /home/rnaa/paper_5_pica_whatif/ecogrow/results/eda_figures
+
+================================================================================
+✨ EDA COMPLETE - READY FOR PUBLICATION
+================================================================================

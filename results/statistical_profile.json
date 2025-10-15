@@ -1,0 +1,256 @@
+{
+  "climate": {
+    "count": {
+      "Tair": 47738.0,
+      "Rhair": 47738.0,
+      "CO2air": 47738.0,
+      "HumDef": 47738.0,
+      "VentLee": 47738.0,
+      "Ventwind": 47738.0,
+      "AssimLight": 47738.0,
+      "PipeLow": 47738.0,
+      "PipeGrow": 47738.0,
+      "Tot_PAR": 47738.0
+    },
+    "mean": {
+      "Tair": 22.713504964598435,
+      "Rhair": 81.75606854078511,
+      "CO2air": 649.2823327328334,
+      "HumDef": 3.9051112321421093,
+      "VentLee": 11.186308601114415,
+      "Ventwind": 2.724642842180234,
+      "AssimLight": 52.5367631656123,
+      "PipeLow": 31.25032259415979,
+      "PipeGrow": 10.446440990405964,
+      "Tot_PAR": 221.28516066864972
+    },
+    "std": {
+      "Tair": 3.920409659927823,
+      "Rhair": 11.619725962428577,
+      "CO2air": 126.78531183350063,
+      "HumDef": 3.0656717491860417,
+      "VentLee": 21.313544814538965,
+      "Ventwind": 8.575368855374588,
+      "AssimLight": 49.93612988724505,
+      "PipeLow": 20.93367905216745,
+      "PipeGrow": 17.934326068719372,
+      "Tot_PAR": 211.394489632871
+    },
+    "min": {
+      "Tair": -1.0,
+      "Rhair": -22.2,
+      "CO2air": -499.0,
+      "HumDef": 0.2,
+      "VentLee": 0.0,
+      "Ventwind": 0.0,
+      "AssimLight": 0.0,
+      "PipeLow": 0.0,
+      "PipeGrow": 0.0,
+      "Tot_PAR": 0.0
+    },
+    "25%": {
+      "Tair": 20.0,
+      "Rhair": 78.7,
+      "CO2air": 573.0,
+      "HumDef": 1.9,
+      "VentLee": 0.0,
+      "Ventwind": 0.0,
+      "AssimLight": 0.0,
+      "PipeLow": 0.0,
+      "PipeGrow": 0.0,
+      "Tot_PAR": 1.0
+    },
+    "50%": {
+      "Tair": 22.8,
+      "Rhair": 85.3,
+      "CO2air": 632.0,
+      "HumDef": 2.9,
+      "VentLee": 3.0,
+      "Ventwind": 0.0,
+      "AssimLight": 100.0,
+      "PipeLow": 35.3,
+      "PipeGrow": 0.0,
+      "Tot_PAR": 197.0
+    },
+    "75%": {
+      "Tair": 26.4,
+      "Rhair": 89.2,
+      "CO2air": 706.0,
+      "HumDef": 4.7,
+      "VentLee": 10.0,
+      "Ventwind": 2.0,
+      "AssimLight": 100.0,
+      "PipeLow": 47.4,
+      "PipeGrow": 32.875,
+      "Tot_PAR": 285.0
+    },
+    "max": {
+      "Tair": 34.3,
+      "Rhair": 99.2,
+      "CO2air": 1224.0,
+      "HumDef": 32.1,
+      "VentLee": 100.0,
+      "Ventwind": 100.0,
+      "AssimLight": 100.0,
+      "PipeLow": 73.6,
+      "PipeGrow": 61.3,
+      "Tot_PAR": 1005.0
+    },
+    "missing_pct": {
+      "Tair": 0.14850760317095107,
+      "Rhair": 0.14850760317095107,
+      "CO2air": 0.14850760317095107,
+      "HumDef": 0.14850760317095107,
+      "VentLee": 0.14850760317095107,
+      "Ventwind": 0.14850760317095107,
+      "AssimLight": 0.14850760317095107,
+      "PipeLow": 0.14850760317095107,
+      "PipeGrow": 0.14850760317095107,
+      "Tot_PAR": 0.14850760317095107
+    },
+    "outliers": {
+      "Tair": 9,
+      "Rhair": 4306,
+      "CO2air": 3005,
+      "HumDef": 3759,
+      "VentLee": 5933,
+      "Ventwind": 6714,
+      "AssimLight": 0,
+      "PipeLow": 0,
+      "PipeGrow": 0,
+      "Tot_PAR": 1985
+    }
+  },
+  "resources": {
+    "count": {
+      "Heat_cons": 166.0,
+      "ElecHigh": 166.0,
+      "ElecLow": 166.0,
+      "CO2_cons": 166.0,
+      "Irr": 166.0,
+      "Drain": 166.0
+    },
+    "mean": {
+      "Heat_cons": 2.840722891566265,
+      "ElecHigh": 0.9307228915662651,
+      "ElecLow": 0.6789156626506025,
+      "CO2_cons": 0.05201150066867471,
+      "Irr": 4.750602409638554,
+      "Drain": 2.1102409638554214
+    },
+    "std": {
+      "Heat_cons": 1.2355813580831079,
+      "ElecHigh": 0.6333810823452185,
+      "ElecLow": 0.38135487981571076,
+      "CO2_cons": 0.02322597244864788,
+      "Irr": 2.1932333122985286,
+      "Drain": 1.4417005748924172
+    },
+    "min": {
+      "Heat_cons": 0.13,
+      "ElecHigh": 0.0,
+      "ElecLow": 0.0,
+      "CO2_cons": 0.009824111,
+      "Irr": 0.0,
+      "Drain": 0.0
+    },
+    "25%": {
+      "Heat_cons": 1.9024999999999999,
+      "ElecHigh": 0.4,
+      "ElecLow": 0.6,
+      "CO2_cons": 0.03597374975,
+      "Irr": 3.5,
+      "Drain": 0.8
+    },
+    "50%": {
+      "Heat_cons": 2.9050000000000002,
+      "ElecHigh": 1.4,
+      "ElecLow": 0.9,
+      "CO2_cons": 0.0467925,
+      "Irr": 5.3,
+      "Drain": 2.2
+    },
+    "75%": {
+      "Heat_cons": 3.6525,
+      "ElecHigh": 1.5,
+      "ElecLow": 0.9,
+      "CO2_cons": 0.06373645825,
+      "Irr": 6.375,
+      "Drain": 3.3
+    },
+    "max": {
+      "Heat_cons": 5.96,
+      "ElecHigh": 1.5,
+      "ElecLow": 1.0,
+      "CO2_cons": 0.138481667,
+      "Irr": 8.3,
+      "Drain": 5.2
+    },
+    "missing_pct": {
+      "Heat_cons": 0.0,
+      "ElecHigh": 0.0,
+      "ElecLow": 0.0,
+      "CO2_cons": 0.0,
+      "Irr": 0.0,
+      "Drain": 0.0
+    }
+  },
+  "weather": {
+    "count": {
+      "Tout": 47738.0,
+      "Rhout": 47738.0,
+      "Iglob": 47738.0,
+      "Windsp": 47738.0,
+      "PARout": 47738.0
+    },
+    "mean": {
+      "Tout": 9.025341447072682,
+      "Rhout": 74.84794189084796,
+      "Iglob": 125.29670283737454,
+      "Windsp": 4.982485650934427,
+      "PARout": 250.27002597135
+    },
+    "std": {
+      "Tout": 4.229593035529191,
+      "Rhout": 19.87399107647862,
+      "Iglob": 222.00629618071946,
+      "Windsp": 3.849019907121393,
+      "PARout": 443.8566620514921
+    },
+    "min": {
+      "Tout": -0.2,
+      "Rhout": 10.100003,
+      "Iglob": 0.0,
+      "Windsp": 0.0,
+      "PARout": 0.0
+    },
+    "25%": {
+      "Tout": 6.299999987,
+      "Rhout": 61.7,
+      "Iglob": 0.0,
+      "Windsp": 2.200000034,
+      "PARout": 0.0
+    },
+    "50%": {
+      "Tout": 8.39999998,
+      "Rhout": 79.3,
+      "Iglob": 0.0,
+      "Windsp": 4.2,
+      "PARout": 1.0
+    },
+    "75%": {
+      "Tout": 10.99999999,
+      "Rhout": 91.2750000675,
+      "Iglob": 146.00000185,
+      "Windsp": 7.1,
+      "PARout": 287.0000001
+    },
+    "max": {
+      "Tout": 27.29999993,
+      "Rhout": 99.7,
+      "Iglob": 1505.0,
+      "Windsp": 21.8999999,
+      "PARout": 2010.0
+    }
+  }
+}

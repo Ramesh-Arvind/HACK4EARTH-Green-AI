@@ -1,0 +1,2 @@
+run_id,phase,kWh,kgCO2e,water_L,runtime,quality_metric,hardware,region,method
+optimized_1,optimized,2.782382803389686e-05,1.168600777423668e-05,5.0082890461014345e-05,0.001959562301635742,-0.8719654083251953,GPU_Tesla_P4,Germany,Quantized_INT8

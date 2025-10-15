@@ -1,0 +1,2 @@
+run_id,phase,kWh,kgCO2e,water_L,runtime,quality_metric,hardware,region,method
+baseline_1,baseline,2.6237479467878296e-05,1.1019741376508884e-05,4.722746304218093e-05,0.004770994186401367,-0.7880334854125977,GPU_Tesla_P4,Germany,GNN+PINN_baseline

@@ -1,0 +1,41 @@
+Variable,Description,Unit,Type,Frequency
+Tout,Outdoor temperature,°C,State,5 min
+Rhout,Outdoor relative humidity,%,State,5 min
+Iglob,Solar radiation,W/m²,State,5 min
+Windsp,Wind speed,m/s,State,5 min
+Winddir,Wind direction,compass [0-128],State,5 min
+Rain,Rain status,"1=rain, 0=dry",State,5 min
+PARout,PAR outdoor,µmol/m²/s,State,5 min
+Pyrgeo,Heat emission (pyrgeometer),W/m²,State,5 min
+AbsHumOut,Absolute humidity outdoor,g/m³,State,5 min
+RadSum,Radiation sum,J/cm²,State,5 min
+Tair,Indoor air temperature,°C,State,5 min
+Rhair,Indoor relative humidity,%,State,5 min
+CO2air,Indoor CO₂ concentration,ppm,State,5 min
+HumDef,Humidity deficit,g/m³,State,5 min
+VentLee,Leeward vent opening,% [0-100],Control,5 min
+Ventwind,Windward vent opening,% [0-100],Control,5 min
+AssimLight,HPS lamps status,"% [0, 100]",Control,5 min
+EnScr,Energy curtain opening,% [0-100],Control,5 min
+BlackScr,Blackout curtain opening,% [0-100],Control,5 min
+PipeLow,Rail pipe temperature,°C,Control,5 min
+PipeGrow,Crop pipe temperature,°C,Control,5 min
+co2_dos,CO₂ dosing rate,kg/ha/hour,Control,5 min
+Tot_PAR,Total PAR (sun + lamps),µmol/m²/s,State,5 min
+Tot_PAR_Lamps,PAR from lamps only,µmol/m²/s,State,5 min
+Heat_cons,Heating energy consumption,MJ/m²/day,Energy,Daily
+ElecHigh,Electricity (peak hours),kWh/m²/day,Energy,Daily
+ElecLow,Electricity (off-peak),kWh/m²/day,Energy,Daily
+CO2_cons,CO₂ consumption,kg/m²/day,Energy,Daily
+Irr,Irrigation water,L/m²/day,Resource,Daily
+Drain,Drainage water,L/m²/day,Resource,Daily
+ProdA,Tomato yield (Class A),kg/m²,Production,Per harvest
+ProdB,Tomato yield (Class B),kg/m²,Production,Per harvest
+avg_nr_harvested_trusses,Average trusses harvested,Number/stem,Production,Per harvest
+Truss_development_time,Truss development period,days,Production,Per harvest
+Flavour,Flavor level,0-100,Quality,Bi-weekly
+TSS,Total soluble solids (Brix),°Brix,Quality,Bi-weekly
+Acid,Titratable acid,mmol H₃O⁺/100g,Quality,Bi-weekly
+%Juice,Juice content,%,Quality,Bi-weekly
+Bite,Firmness (breaking force),N,Quality,Bi-weekly
+Weight,Average fruit weight,g,Quality,Bi-weekly

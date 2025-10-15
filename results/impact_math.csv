@@ -1,0 +1,4 @@
+scenario,num_greenhouses,energy_saved_kwh_yr,carbon_avoided_tons_yr,cost_saved_eur_yr,water_saved_m3_yr,cars_equivalent,trees_equivalent,summary
+low,10,173773,73.0,55607,104,16,3284,"Small cooperative or research facility. Energy equivalent to 15 homes. Payback period: 8-10 months."
+medium,100,1737732,729.8,556074,1043,159,32843,"Regional greenhouse cluster. 1.74 GWh saved annually. Removes 159 cars equivalent. Creates 5-10 tech jobs."
+high,1000,17377321,7298.5,5560743,10426,1587,328431,"National deployment. 17.4 GWh saved (0.04% of Germany agriculture energy). Equivalent to 580 acres of forest carbon sequestration."
